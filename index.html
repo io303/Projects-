@@ -1,17 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    .card h2 {
+      margin: 10px 0;
+      font-size: 1.5rem;
+      color: #007bff;
+    }
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+      color: #555;
+    }
+    .card a {
+      display: inline-block;
+      text-decoration: none;
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .card a:hover {
+      background: #0056b3;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f0f0f0;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <h1>My Projects</h1>
-    <ul>
-        <li><a href="bmi/index.html">BMI Calculator</a></li>
-        <li><a href="color-changer/index.html">Color Changer</a></li>
-        <li><a href="digital-clock/index.html">Digital Clock</a></li>
-    </ul>
+  <header>
+    <h1>🚀 My Practice Projects</h1>
+    <p>Explore my HTML, CSS, and JavaScript projects</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>BMI Calculator</h2>
+      <p>A simple tool to calculate your Body Mass Index.</p>
+      <a href="BMI/index.html">View Project</a>
+    </div>
+
+    <div class="card">
+      <h2>Color Changer</h2>
+      <p>Change background colors dynamically with JavaScript.</p>
+      <a href="Color-Changer/index.html">View Project</a>
+    </div>
+
+    <div class="card">
+      <h2>Digital Clock</h2>
+      <p>A live digital clock built with HTML, CSS, and JS.</p>
+      <a href="Digital-Clock/index.html">View Project</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 My Projects | Built with ❤️ using HTML, CSS & JS
+  </footer>
 </body>
 </html>
 
